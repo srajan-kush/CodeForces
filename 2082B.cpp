@@ -2,32 +2,32 @@
 using namespace std;
 
 int makeitSmall(int x, int n, int m) {
-    while (n > 0) {
-        x /= 2;
+    while (n > 0 && x > 0) {
+        x >>= 1;  // Faster division by 2
         n--;
     }
-    
-    while (m > 0) {
-        x = (x + 1) / 2;
-        m--;
-    }
+
+    if (x == 0) return 0;
+
+    int k = min(m, 30);
+    x = (x + (1 << k) - 1) >> k;  // Round up after m shifts
 
     return x;
 }
 
 int makeitLarge(int x, int n, int m) {
-    while (n > 0 && x % 2 == 0) {
-        x /= 2;
+    while (n > 0 && x > 0 && (x & 1) == 0) {  
+        x >>= 1;  // Remove power of 2 first
         n--;
     }
 
-    while (m > 0) {
-        x = (x + 1) / 2;
-        m--;
-    }
+    if (x == 0) return 0;
 
-    while (n > 0) {
-        x /= 2;
+    int k = min(m, 30);
+    x = (x + (1 << k) - 1) >> k;  // Round up after m shifts
+
+    while (n > 0 && x > 0) {  
+        x >>= 1;
         n--;
     }
 
