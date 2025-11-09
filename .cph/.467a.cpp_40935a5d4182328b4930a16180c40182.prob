@@ -1,0 +1,1 @@
+{"name":"Local: 467a","url":"c:\\Users\\sraja\\Desktop\\c-s++\\CodeForces\\467a.cpp","tests":[{"id":1762684218376,"input":"3\n1 1\n2 2\n3 3","output":"0"},{"id":1762684226283,"input":"3\n1 10\n0 10\n10 10","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\sraja\\Desktop\\c-s++\\CodeForces\\467a.cpp","group":"local","local":true}
