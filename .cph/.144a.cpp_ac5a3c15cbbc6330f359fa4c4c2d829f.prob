@@ -1,0 +1,1 @@
+{"name":"Local: 144a","url":"c:\\Users\\sraja\\Desktop\\c-s++\\CodeForces\\144a.cpp","tests":[{"id":1764004031145,"input":"4\n33 44 11 22\n","output":"2"},{"id":1764004041823,"input":"7\n10 10 58 31 63 40 76\n","output":"10"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\sraja\\Desktop\\c-s++\\CodeForces\\144a.cpp","group":"local","local":true}
