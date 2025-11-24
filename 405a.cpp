@@ -2,17 +2,19 @@
 using namespace std;
 
 int main(){
-    int t,a,b;
+    int t;
     cin >> t;
-    vector<int>arr(t);
-    for(int i = 0; i < t; i++){
-       cin >> a >> b;
-       arr[i] = (a % b == 0) ? 0 : (b - (a % b));
-    }
+    vector<int> vec(t,0);
 
     for(int i = 0; i < t; i++){
-        cout << arr[i] << endl;
+        cin >> vec[i];
     }
-    
+
+    sort(vec.begin(),vec.end());
+
+    for(int i = 0; i < t; i++){
+        cout << vec[i] << " ";
+    }
+
     return 0;
 }
