@@ -1,0 +1,1 @@
+{"name":"Local: 3172f","url":"c:\\Users\\sraja\\Desktop\\c-s++\\CodeForces\\3172f.cpp","tests":[{"id":1764178715749,"input":"3\n4 2 6\n","output":"4"},{"id":1764178728945,"input":"6\n2 4 6 7 14 21\n","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\sraja\\Desktop\\c-s++\\CodeForces\\3172f.cpp","group":"local","local":true}
