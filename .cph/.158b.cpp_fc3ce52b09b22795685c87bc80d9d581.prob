@@ -1,0 +1,1 @@
+{"name":"Local: 158b","url":"c:\\Users\\sraja\\Desktop\\c-s++\\CodeForces\\158b.cpp","tests":[{"id":1764328262388,"input":"8\n2 3 4 4 2 1 3 1\n","output":"5"},{"id":1764328449613,"input":"5\n1 2 4 3 3\n","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\sraja\\Desktop\\c-s++\\CodeForces\\158b.cpp","group":"local","local":true}
