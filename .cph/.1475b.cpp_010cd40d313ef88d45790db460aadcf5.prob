@@ -1,0 +1,1 @@
+{"name":"Local: 1475b","url":"c:\\Users\\sraja\\Desktop\\c-s++\\CodeForces\\1475b.cpp","tests":[{"id":1764427085040,"input":"5\n1\n4041\n4042\n8081\n8079\n","output":"NO\nYES\nYES\nYES\nNO\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\sraja\\Desktop\\c-s++\\CodeForces\\1475b.cpp","group":"local","local":true}
