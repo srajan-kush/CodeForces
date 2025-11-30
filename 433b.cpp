@@ -1,21 +1,23 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void preSum(vector<int>& arr, int n){
-    for(int i = 1; i < n; i++){
+#define ll long long
+
+void preSum(vector<ll>& arr, ll n){
+    for(ll i = 1; i < n; i++){
         arr[i] += arr[i - 1];
     }
 }
 
 int main(){
-    int n,m,a,b,c;
+    ll n,m,a,b,c;
     cin >> n;
 
-    vector<int> arr(n);
+    vector<ll> arr(n);
 
-    for(int i = 0; i < n; i++) cin >> arr[i];
+    for(ll i = 0; i < n; i++) cin >> arr[i];
 
-    vector<int> prr(arr.begin(),arr.end());
+    vector<ll> prr(arr.begin(),arr.end());
     sort(prr.begin(),prr.end());
 
     preSum(arr,n),preSum(prr,n);
