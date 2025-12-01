@@ -57,7 +57,7 @@ int main(){
         ans = min(ans,(b - (c % b)) % b);
        }
        if(b == 4){
-        cout << min(2-evcnt,ans) << endl;
+        (evcnt >= 2)?cout << 0 << endl :cout << min(2-evcnt,ans) << endl;
         continue;
        } 
        cout << ans << endl;
