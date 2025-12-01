@@ -24,7 +24,6 @@ using namespace std;
 #define sech set<char>
 #define sest set<string>
 #define all(x) (x).begin(),(x).end()
-#define forlp(n) for(int i = 0; i < n; i++)
 #define forlp0(x) for(int i = 0; i < (x).size(); i++)
 #define forlp1(x,i) for(int i = 0; i < (x).size(); i++)
 #define forlp2(x,i,j) for(int i = j; i < (x).size(); i++)
@@ -45,26 +44,7 @@ int main(){
     int t = 1,n,a,b,c;
     //cin >> t;
     while(t--){
-       cin >> n;
-       int mx = 0;
-       vi arr(n);
-       forlp(n) cin >> arr[i];
-       c = 0;
-       forlp(n){
-        if(arr[i] == 0) c++;
-        else c--;
-        if(c < 0) c = 0;
-        mx = max(mx,c);
-       }
-
-       if(mx == 0){
-        cout << n - 1;
-        return 0;
-       }
-
-       forlp(n) mx += arr[i];
-
-       cout << mx;
+       
     }
     return 0;
 }

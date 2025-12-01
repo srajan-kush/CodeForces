@@ -43,28 +43,24 @@ int main(){
     fast;
 
     int t = 1,n,a,b,c;
-    //cin >> t;
+    cin >> t;
     while(t--){
-       cin >> n;
-       int mx = 0;
-       vi arr(n);
-       forlp(n) cin >> arr[i];
-       c = 0;
-       forlp(n){
-        if(arr[i] == 0) c++;
-        else c--;
-        if(c < 0) c = 0;
-        mx = max(mx,c);
+       cin >> a >> b;
+       int ans = INT_MAX;
+       int evcnt = 0;
+       forlp(a){
+        cin >> c;
+        if(b == 4){
+            if(c % 4 == 0) evcnt = 2;
+            else if(c % 2 == 0) evcnt++;
+        }
+        ans = min(ans,(b - (c % b)) % b);
        }
-
-       if(mx == 0){
-        cout << n - 1;
-        return 0;
-       }
-
-       forlp(n) mx += arr[i];
-
-       cout << mx;
+       if(b == 4){
+        cout << min(2-evcnt,ans) << endl;
+        continue;
+       } 
+       cout << ans << endl;
     }
     return 0;
 }
